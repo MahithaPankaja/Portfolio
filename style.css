@@ -506,6 +506,20 @@ img {
   height: 20px;
 }
 
+.social-png-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  /* Default filter color matches var(--text-secondary) (#9ca3af) */
+  filter: brightness(0) invert(69%) sepia(8%) saturate(347%) hue-rotate(182deg) brightness(96%) contrast(87%);
+  transition: filter var(--transition-fast), transform var(--transition-fast);
+}
+
+.social-icon:hover .social-png-icon {
+  /* Hover color matches var(--text-primary) (#f3f4f6) */
+  filter: brightness(0) invert(100%) brightness(96%) contrast(96%);
+}
+
 .hero-image-wrapper {
   position: relative;
   display: flex;
