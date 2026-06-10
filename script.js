@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initTypingEffect();
   initScrollReveal();
-  initTimelineTabs();
   initMobileMenu();
   initScrollspy();
   initContactForm();
@@ -49,9 +48,10 @@ function initTypingEffect() {
 
   const words = [
     "AI & Machine Learning Enthusiast",
-    "Future AI Engineer",
-    "Technology Professional with Accounting Expertise",
-    "Strong Team Leader & Project Coordinator"
+    "AI Engineer & Tech-Business Dual Professional",
+    "Machine Learning Pioneer with Financial Expertise",
+    "Dual Specialist: Information Technology & Accounting",
+    "Intelligent Systems & Financial Technology Developer"
   ];
   
   let wordIndex = 0;
@@ -122,25 +122,7 @@ function initScrollReveal() {
  * Timeline Tabs Switcher
  * Toggles visibility between Education and Professional Qualifications panels.
  */
-function initTimelineTabs() {
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  const timelinePanes = document.querySelectorAll('.timeline-pane');
 
-  tabButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Deactivate other tabs
-      tabButtons.forEach(b => b.classList.remove('active'));
-      timelinePanes.forEach(pane => pane.classList.remove('active'));
-
-      // Activate clicked tab
-      btn.classList.add('active');
-      const targetPane = document.getElementById(btn.getAttribute('data-target'));
-      if (targetPane) {
-        targetPane.classList.add('active');
-      }
-    });
-  });
-}
 
 /**
  * Mobile Navigation Hamburg Menu
